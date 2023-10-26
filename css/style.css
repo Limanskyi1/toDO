@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header {
+  background: url("/header-bg.png"), lightgray 0px 0px/100% 100% no-repeat;
+  height: 300px;
+  background-size: cover;
+}
+.header .wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header__logo {
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+
+.main {
+  margin-top: 50px;
+}
+.main .form-input {
+  margin-bottom: 40px;
+  border: 1px solid #034ed0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  color: #9495A5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  padding: 20px 70px;
+}
+.main .form-input::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #9495A5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+.main .form-input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #9495A5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+.main .task {
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border: 1px solid #E3E4F1;
+}
+.main .task.done p {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.main .task.done .task-status {
+  background-image: url(/active-status.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+.main .task p {
+  color: #494C6B;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+.main .task .done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.main .task .delete-task {
+  cursor: pointer;
+  margin-left: auto;
+}
+.main .filter {
+  cursor: pointer;
+}
+.main .task-status {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.main .actions {
+  padding: 20px 24px;
+  border: 1px solid #E3E4F1;
+  display: flex;
+  justify-content: space-between;
+}
+.main .actions span {
+  color: #9495A5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+.main .actions span.active {
+  color: #3A7CFD;
+}
+.gu-mirror {
+  position: fixed !important;
+  background: #FFF;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 !important;
+  z-index: 9999 !important;
+}
+.gu-mirror .task-status {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.gu-mirror .delete-task {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}/*# sourceMappingURL=style.css.map */
